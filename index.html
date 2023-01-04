@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Snake game developed by Krystian Kantor"
+    />
+    <meta name="author" content="Krystian Kantor" />
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
+    <link rel="stylesheet" href="./css/style.min.css" />
+    <title>Snake</title>
+  </head>
+
+  <body>
+    <main class="background">
+      <div class="game">
+        <div class="game-bar">
+          <span class="game-score"
+            >Score:
+            <span class="game-score__points" id="game-score__points"
+              >0</span
+            ></span
+          >
+          <button class="game-reset" id="game-reset">Reset</button>
+        </div>
+        <div id="playArea">
+          <button class="game-start" id="game-start">Start Game</button>
+        </div>
+      </div>
+
+      <div class="game-pad__wrapper">
+        <div class="game-pad">
+          <button id="up" data-direction="38">&uHar;</button>
+          <button id="left" data-direction="37">&lHar;</button>
+          <button id="right" data-direction="39">&rHar;</button>
+          <button id="down" data-direction="40">&dHar;</button>
+        </div>
+      </div>
+    </main>
+
+    <div class="copyrights">&#169; All rights reserved by Krystian Kantor</div>
+
+    <script src="./classes/Pixel.js"></script>
+    <script src="./classes/Snake.js"></script>
+    <script src="./classes/Apple.js"></script>
+    <script src="./classes/GamePad.js"></script>
+    <script src="./classes/Game.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
